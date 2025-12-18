@@ -55,6 +55,18 @@ p a:hover {
 	animation: bio-pulse 8s ease-in-out infinite;
 	z-index: -3;
 }
+.feature-visual{
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.feature-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* use cover if you want it to fill */
+}
 
 @keyframes bio-pulse {
 
@@ -68,6 +80,13 @@ p a:hover {
 		opacity: 1;
 		transform: scale(1.1);
 	}
+}
+.feature-panel {
+  display: none;
+}
+
+.feature-panel.active {
+  display: block;
 }
 
 /* Animated organic shapes */
@@ -879,6 +898,7 @@ nav.scrolled {
 	max-width: 1400px;
 	margin: 0 auto;
 }
+
 
 .about-content {
 	display: grid;
