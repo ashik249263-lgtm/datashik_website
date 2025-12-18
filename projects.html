@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datashik - Projects</title>
+  <link rel="icon" type="image/png" href="icon/046de107384da18ea544f6b2a5bc748e.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="tooplate-eco-lume.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background Elements -->
+  <div class="bio-bg"></div>
+  <div class="organic-shapes">
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+  </div>
+  <div class="particle-system" id="particleSystem"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Dat@sh!k</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="hero" style="padding-top: 140px; padding-bottom: 40px; min-height: auto;">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>My Projects</h1>
+        <p>
+          A curated list of my work in Data Science, Machine Learning, Analytics, and MLOps.
+          Each project focuses on real-world problems with clean workflows.
+        </p>
+        <div class="hero-buttons">
+          <a href="#project-list" class="btn btn-primary">📌 View Projects</a>
+          <a href="contact.html" class="btn btn-secondary">🤝 Work With Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" style="height: 420px;">
+        <div class="bio-sphere" style="width: 320px; height: 320px;">
+          <div class="rotating-text no-spin" style="text-align:center; font-weight:700;">
+            <div class="text-circle active" style="opacity:1; transform:none;">PROJECTS • CASE STUDIES</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (like Services) -->
+  <section class="features" id="project-list">
+    <h2 class="section-title">Featured Work</h2>
+
+    <div class="features-showcase">
+
+      <!-- Left Navigation -->
+      <div class="feature-navigation">
+
+        <div class="nav-item active" data-feature="p1">
+          <div class="nav-item-icon">📉</div>
+          <div class="nav-item-content">
+            <h4>Churn Prediction</h4>
+            <p>Classification</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="p2">
+          <div class="nav-item-icon">🧾</div>
+          <div class="nav-item-content">
+            <h4>Sales Dashboard</h4>
+            <p>Power BI / KPI</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="p3">
+          <div class="nav-item-icon">💬</div>
+          <div class="nav-item-content">
+            <h4>Sentiment NLP</h4>
+            <p>Text Analytics</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="p4">
+          <div class="nav-item-icon">📦</div>
+          <div class="nav-item-content">
+            <h4>Price Forecast</h4>
+            <p>Regression</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="p5">
+          <div class="nav-item-icon">🧪</div>
+          <div class="nav-item-content">
+            <h4>Model Deployment</h4>
+            <p>FastAPI</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="p6">
+          <div class="nav-item-icon">🧹</div>
+          <div class="nav-item-content">
+            <h4>Data Cleaning</h4>
+            <p>Pipeline</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Display -->
+      <div class="feature-display">
+
+        <!-- p1 -->
+        <div class="feature-panel active" id="p1">
+          <div class="feature-visual">📉</div>
+          <h3>Customer Churn Prediction</h3>
+          <p>
+            Built a classification model to predict customer churn using structured features,
+            model comparison, and evaluation metrics.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Tools</h5><p>Python, Pandas, Scikit-learn</p></div>
+            <div class="benefit-item"><h5>✅ Approach</h5><p>EDA → features → modeling → evaluation</p></div>
+            <div class="benefit-item"><h5>✅ Metrics</h5><p>Accuracy, F1, ROC-AUC</p></div>
+            <div class="benefit-item"><h5>✅ Outcome</h5><p>Clear churn insights + action ideas</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Want to see the code? →</a>
+        </div>
+
+        <!-- p2 -->
+        <div class="feature-panel" id="p2">
+          <div class="feature-visual">🧾</div>
+          <h3>Sales KPI Dashboard</h3>
+          <p>
+            Created an interactive dashboard for revenue, profit, product performance,
+            and regional trends.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Tools</h5><p>Power BI / Excel / SQL</p></div>
+            <div class="benefit-item"><h5>✅ KPI</h5><p>Revenue, growth, conversion, profit</p></div>
+            <div class="benefit-item"><h5>✅ Features</h5><p>Filters, drill-down, trend lines</p></div>
+            <div class="benefit-item"><h5>✅ Result</h5><p>Fast decision-making dashboard</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Request a similar dashboard →</a>
+        </div>
+
+        <!-- p3 -->
+        <div class="feature-panel" id="p3">
+          <div class="feature-visual">💬</div>
+          <h3>Sentiment Analysis (NLP)</h3>
+          <p>
+            Built a sentiment classifier to analyze reviews/comments and summarize public opinion.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Tools</h5><p>Python, NLP, Sklearn / Transformers</p></div>
+            <div class="benefit-item"><h5>✅ Pipeline</h5><p>Clean text → tokenize → train → evaluate</p></div>
+            <div class="benefit-item"><h5>✅ Output</h5><p>Positive/Negative trends + keywords</p></div>
+            <div class="benefit-item"><h5>✅ Use</h5><p>Brand insights & product improvement</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Need NLP project? →</a>
+        </div>
+
+        <!-- p4 -->
+        <div class="feature-panel" id="p4">
+          <div class="feature-visual">📦</div>
+          <h3>Price / Sales Forecasting</h3>
+          <p>
+            Built regression models to forecast price or demand using time-based features and evaluation.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Tools</h5><p>Python, Pandas, Sklearn</p></div>
+            <div class="benefit-item"><h5>✅ Features</h5><p>Lag, rolling mean, seasonality</p></div>
+            <div class="benefit-item"><h5>✅ Metrics</h5><p>MAE, RMSE, R²</p></div>
+            <div class="benefit-item"><h5>✅ Result</h5><p>Forecast + insights for planning</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Request forecasting solution →</a>
+        </div>
+
+        <!-- p5 -->
+        <div class="feature-panel" id="p5">
+          <div class="feature-visual">🧪</div>
+          <h3>Model Deployment (FastAPI)</h3>
+          <p>
+            Deployed a trained ML model as an API so it can be used in real applications.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ API</h5><p>FastAPI endpoint for predictions</p></div>
+            <div class="benefit-item"><h5>✅ Packaging</h5><p>Saved model + preprocessing pipeline</p></div>
+            <div class="benefit-item"><h5>✅ Docs</h5><p>Swagger UI + usage examples</p></div>
+            <div class="benefit-item"><h5>✅ Ready</h5><p>Production-friendly structure</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Deploy your model →</a>
+        </div>
+
+        <!-- p6 -->
+        <div class="feature-panel" id="p6">
+          <div class="feature-visual">🧹</div>
+          <h3>Data Cleaning Automation Pipeline</h3>
+          <p>
+            Built a reusable data cleaning script/pipeline to standardize datasets quickly.
+          </p>
+
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Cleaning</h5><p>Missing values, duplicates, outliers</p></div>
+            <div class="benefit-item"><h5>✅ Validation</h5><p>Data checks + consistency rules</p></div>
+            <div class="benefit-item"><h5>✅ Output</h5><p>Clean CSV + summary report</p></div>
+            <div class="benefit-item"><h5>✅ Reusable</h5><p>Use for multiple datasets</p></div>
+          </div>
+
+          <a href="contact.html" class="feature-cta">Need a cleaning pipeline? →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (simple) -->
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>EcoLume</h3>
+                <p>Leading the bio-tech revolution with sustainable, nature-inspired solutions for a regenerative future.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Smart Ecosystems</a></li>
+                    <li><a href="#">Bio Energy</a></li>
+                    <li><a href="#">Circular Systems</a></li>
+                    <li><a href="#">Global Network</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Research Papers</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 EcoLume. Harmonizing technology with nature. All rights reserved.</p>
+            <span>•</span>
+            <p>Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
+        </div>
+    </footer>
+
+  <script src="tooplate-eco-scripts.js"></script>
+
+  <!-- Tabs fix (always works) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".features-showcase").forEach(showcase => {
+        const navItems = showcase.querySelectorAll(".nav-item");
+        const panels = showcase.querySelectorAll(".feature-panel");
+
+        function activate(id) {
+          navItems.forEach(n => n.classList.remove("active"));
+          panels.forEach(p => p.classList.remove("active"));
+
+          const nav = showcase.querySelector(`.nav-item[data-feature="${id}"]`);
+          const panel = showcase.querySelector(`#${id}`);
+          if (nav) nav.classList.add("active");
+          if (panel) panel.classList.add("active");
+        }
+
+        navItems.forEach(item => {
+          item.addEventListener("click", () => {
+            activate(item.getAttribute("data-feature"));
+          });
+        });
+
+        const first = showcase.querySelector(".nav-item.active") || navItems[0];
+        if (first) activate(first.getAttribute("data-feature"));
+      });
+    });
+  </script>
+
+</body>
+</html>

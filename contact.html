@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datashik - Contact</title>
+  <link rel="icon" type="image/png" href="icon/046de107384da18ea544f6b2a5bc748e.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="tooplate-eco-lume.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background Elements -->
+  <div class="bio-bg"></div>
+  <div class="organic-shapes">
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+  </div>
+  <div class="particle-system" id="particleSystem"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Dat@sh!k</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Hero -->
+  <section class="hero" style="padding-top: 140px; padding-bottom: 40px; min-height: auto;">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Contact Me</h1>
+        <p>
+          Have a dataset, a project idea, or a goal? Send a message and I’ll reply with a clear plan.
+          (You can also message me on WhatsApp.)
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact-section" class="btn btn-primary">📩 Send Message</a>
+          <a href="services.html" class="btn btn-secondary">🧩 View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" style="height: 420px;">
+        <div class="bio-sphere" style="width: 320px; height: 320px;">
+          <div class="rotating-text no-spin" style="text-align:center; font-weight:700;">
+            <div class="text-circle active" style="opacity:1; transform:none;">LET'S CONNECT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact-section">
+    <h2 class="section-title">Contact With Me</h2>
+    <div class="contact-container">
+
+      <!-- Form -->
+      <div class="contact-form">
+        <h2 class="section-title" style="text-align:left; margin-bottom: 30px;">Send a Message</h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Example: Dashboard / ML Model / Data Cleaning" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me your goal, deadline, and dataset details..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">🌱 Send Message</button>
+
+          <!-- Success message -->
+          <p id="formMsg" style="margin-top:16px; display:none; color: var(--primary-green); font-weight:600;">
+            ✅ Message ready! (If you want real sending, connect this form with EmailJS / Formspree.)
+          </p>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-details">
+            <h4>Email</h4>
+            <p><a href="mailto:ashik249263@gmail.com">ashik249263@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-details">
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/8801763566372" target="_blank" rel="noopener">+8801763566372</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌍</div>
+          <div class="contact-details">
+            <h4>Location</h4>
+            <p>Bangladesh (Remote / Online)</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div class="contact-details">
+            <h4>Availability</h4>
+            <p>Reply within 24 hours</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Social</h3>
+        <div class="social-links">
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noopener" title="GitHub">💻</a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn">💼</a>
+          <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener" title="Facebook">📘</a>
+          <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener" title="Instagram">📸</a>
+        </div>
+
+        <p style="margin-top: 20px; color: rgba(255,255,255,0.7); line-height:1.6;">
+          Tip: If you have a dataset, you can mention the file format (CSV/Excel), number of rows,
+          and what result you want (dashboard, model, report).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>EcoLume</h3>
+                <p>Leading the bio-tech revolution with sustainable, nature-inspired solutions for a regenerative future.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Smart Ecosystems</a></li>
+                    <li><a href="#">Bio Energy</a></li>
+                    <li><a href="#">Circular Systems</a></li>
+                    <li><a href="#">Global Network</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Research Papers</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 EcoLume. Harmonizing technology with nature. All rights reserved.</p>
+            <span>•</span>
+            <p>Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
+        </div>
+    </footer>
+
+  <script src="tooplate-eco-scripts.js"></script>
+
+  <!-- small form message (no backend) -->
+  <script>
+    const form = document.getElementById("contactForm");
+    const msg = document.getElementById("formMsg");
+
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        msg.style.display = "block";
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>

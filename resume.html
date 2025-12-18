@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datashik - Resume</title>
+  <link rel="icon" type="image/png" href="icon/046de107384da18ea544f6b2a5bc748e.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="tooplate-eco-lume.css" rel="stylesheet">
+
+  <!-- Small extra style for CV blocks (safe, won’t break your theme) -->
+  <style>
+    .cv-wrap { max-width: 1400px; margin: 0 auto; padding: 120px 40px; }
+    .cv-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: start; }
+    .cv-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(0,255,136,.18);
+      border-radius: 24px;
+      padding: 32px;
+      backdrop-filter: blur(20px);
+    }
+    .cv-h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--primary-green), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .cv-pill-wrap { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cv-pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.86);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+    .cv-item { padding: 18px 0; border-top: 1px solid rgba(0,255,136,.12); }
+    .cv-item:first-child { border-top: none; padding-top: 0; }
+    .cv-item h4 { color: var(--primary-green); font-weight: 700; margin-bottom: 6px; }
+    .cv-item p { color: rgba(255,255,255,.78); line-height: 1.7; margin: 0; }
+    .cv-meta { color: rgba(255,255,255,.55); font-size: .95rem; margin-bottom: 10px; }
+    .cv-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top: 18px; }
+    .cv-mini { color: rgba(255,255,255,.75); line-height: 1.7; }
+    .cv-link { color: var(--primary-green); text-decoration: none; }
+    .cv-link:hover { color: var(--accent-blue); }
+    @media (max-width: 900px){
+      .cv-grid { grid-template-columns: 1fr; }
+      .cv-wrap { padding: 100px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Elements -->
+  <div class="bio-bg"></div>
+  <div class="organic-shapes">
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+  </div>
+  <div class="particle-system" id="particleSystem"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Dat@sh!k</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" style="padding-top: 140px; padding-bottom: 40px; min-height: auto;">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Resume</h1>
+        <p>
+          Data Scientist • Python • SQL • Machine Learning • MLOps • Analytics.
+          Here’s my CV in a clean web format.
+        </p>
+        <div class="hero-buttons">
+          <!-- Add your PDF file later: href="assets/Ashik-CV.pdf" -->
+          <a href="#" class="btn btn-primary">⬇️ Download CV (PDF)</a>
+          <a href="contact.html" class="btn btn-secondary">📩 Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" style="height: 420px;">
+        <div class="bio-sphere" style="width: 320px; height: 320px;">
+          <div class="rotating-text no-spin" style="text-align:center; font-weight:700;">
+            <div class="text-circle active" style="opacity:1; transform:none;">CV • RESUME</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Content -->
+  <section class="cv-wrap">
+
+    <div class="cv-grid">
+
+      <!-- Left (Main) -->
+      <div class="cv-card">
+        <div class="cv-h2">Professional Summary</div>
+        <p class="cv-mini">
+          I’m <strong>Ashik</strong>, a Data Scientist who turns messy data into actionable insights and production-ready ML systems.
+          I work across the full pipeline: data cleaning → analysis → modeling → deployment → reporting.
+        </p>
+
+        <div class="cv-actions">
+          <a class="btn btn-primary" href="projects.html">🌱 View Projects</a>
+          <a class="btn btn-secondary" href="services.html">🧩 View Services</a>
+        </div>
+
+        <div style="margin-top: 34px;" class="cv-h2">Experience / Work</div>
+
+        <div class="cv-item">
+          <h4>Freelance Data Scientist (Remote)</h4>
+          <div class="cv-meta">2024 – Present</div>
+          <p>• Data cleaning, EDA, KPI reporting, dashboards and ML solutions for clients.</p>
+          <p>• Built reusable pipelines, readable reports, and decision-ready insights.</p>
+        </div>
+
+        <div class="cv-item">
+          <h4>Personal / Portfolio Projects</h4>
+          <div class="cv-meta">Ongoing</div>
+          <p>• Classification, regression, dashboards, and deployment practice projects.</p>
+          <p>• Focus on clean GitHub structure and documentation.</p>
+        </div>
+
+        <div style="margin-top: 34px;" class="cv-h2">Featured Projects</div>
+
+        <div class="cv-item">
+          <h4>Customer Churn Prediction</h4>
+          <div class="cv-meta">Python • Scikit-learn • Evaluation</div>
+          <p>Built a churn classifier with EDA, feature engineering and model comparison.</p>
+        </div>
+
+        <div class="cv-item">
+          <h4>Sales KPI Dashboard</h4>
+          <div class="cv-meta">Power BI • SQL • Visualization</div>
+          <p>Created an interactive dashboard with filters, KPIs, and trends for decisions.</p>
+        </div>
+
+        <div class="cv-item">
+          <h4>Model Deployment API</h4>
+          <div class="cv-meta">FastAPI / Flask • Packaging</div>
+          <p>Deployed ML model as an API with docs + clean usage instructions.</p>
+        </div>
+      </div>
+
+      <!-- Right (Sidebar) -->
+      <div class="cv-card">
+        <div class="cv-h2">Contact</div>
+
+        <p class="cv-mini"><strong>Email:</strong> <a class="cv-link" href="mailto:ashik249263@gmail.com">ashik249263@gmail.com</a></p>
+        <p class="cv-mini"><strong>WhatsApp:</strong> <a class="cv-link" href="https://wa.me/8801763566372" target="_blank" rel="noopener">+8801763566372</a></p>
+        <p class="cv-mini"><strong>Location:</strong> Bangladesh (Remote)</p>
+
+        <div style="margin-top: 26px;" class="cv-h2">Core Skills</div>
+        <div class="cv-pill-wrap">
+          <div class="cv-pill">Python</div>
+          <div class="cv-pill">SQL</div>
+          <div class="cv-pill">Data Cleaning</div>
+          <div class="cv-pill">EDA</div>
+          <div class="cv-pill">Data Visualization</div>
+          <div class="cv-pill">Machine Learning</div>
+          <div class="cv-pill">MLOps (Basics)</div>
+          <div class="cv-pill">Power BI</div>
+        </div>
+
+        <div style="margin-top: 26px;" class="cv-h2">Tools</div>
+        <div class="cv-pill-wrap">
+          <div class="cv-pill">Pandas</div>
+          <div class="cv-pill">NumPy</div>
+          <div class="cv-pill">Matplotlib</div>
+          <div class="cv-pill">Scikit-learn</div>
+          <div class="cv-pill">Git/GitHub</div>
+          <div class="cv-pill">Excel</div>
+          <div class="cv-pill">Jupyter</div>
+          <div class="cv-pill">VS Code</div>
+        </div>
+
+        <div style="margin-top: 26px;" class="cv-h2">Education</div>
+        <div class="cv-item">
+          <h4>Add Your Degree Here</h4>
+          <div class="cv-meta">University Name • Year</div>
+          <p>Major / Department (optional)</p>
+        </div>
+
+        <div style="margin-top: 26px;" class="cv-h2">Certifications</div>
+        <div class="cv-item">
+          <h4>Add Certificates Here</h4>
+          <div class="cv-meta">Coursera / Udemy / Google • Year</div>
+          <p>Example: Google Data Analytics, ML Specialization etc.</p>
+        </div>
+
+        <div class="cv-actions" style="margin-top: 18px;">
+          <a class="btn btn-primary" href="contact.html">📩 Hire Me</a>
+          <a class="btn btn-secondary" href="services.html">🧩 Services</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>EcoLume</h3>
+                <p>Leading the bio-tech revolution with sustainable, nature-inspired solutions for a regenerative future.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Smart Ecosystems</a></li>
+                    <li><a href="#">Bio Energy</a></li>
+                    <li><a href="#">Circular Systems</a></li>
+                    <li><a href="#">Global Network</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Research Papers</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 EcoLume. Harmonizing technology with nature. All rights reserved.</p>
+            <span>•</span>
+            <p>Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
+        </div>
+    </footer>
+  <script src="tooplate-eco-scripts.js"></script>
+</body>
+</html>

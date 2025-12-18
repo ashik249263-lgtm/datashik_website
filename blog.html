@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datashik - Blog</title>
+  <link rel="icon" type="image/png" href="icon/046de107384da18ea544f6b2a5bc748e.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="tooplate-eco-lume.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background Elements -->
+  <div class="bio-bg"></div>
+  <div class="organic-shapes">
+    <div class="leaf leaf-1"></div>
+    <div class="leaf leaf-2"></div>
+    <div class="leaf leaf-3"></div>
+  </div>
+  <div class="particle-system" id="particleSystem"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Dat@sh!k</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Hero -->
+  <section class="hero" style="padding-top: 140px; padding-bottom: 40px; min-height: auto;">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>My Blog</h1>
+        <p>
+          Short, practical posts about SQL, Python, Machine Learning, MLOps, and Data Analytics.
+          Easy explanations, real examples, and project-based learning.
+        </p>
+        <div class="hero-buttons">
+          <a href="#blog-list" class="btn btn-primary">📝 Read Posts</a>
+          <a href="contact.html" class="btn btn-secondary">📩 Collaborate</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" style="height: 420px;">
+        <div class="bio-sphere" style="width: 320px; height: 320px;">
+          <div class="rotating-text no-spin" style="text-align:center; font-weight:700;">
+            <div class="text-circle active" style="opacity:1; transform:none;">BLOG • TUTORIALS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog (like Services) -->
+  <section class="features" id="blog-list">
+    <h2 class="section-title">Latest Posts</h2>
+
+    <div class="features-showcase">
+
+      <!-- Left Navigation -->
+      <div class="feature-navigation">
+
+        <div class="nav-item active" data-feature="b1">
+          <div class="nav-item-icon">🧾</div>
+          <div class="nav-item-content">
+            <h4>SQL Basics</h4>
+            <p>Joins, Group By</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="b2">
+          <div class="nav-item-icon">🐍</div>
+          <div class="nav-item-content">
+            <h4>Python for Data</h4>
+            <p>Pandas workflow</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="b3">
+          <div class="nav-item-icon">📊</div>
+          <div class="nav-item-content">
+            <h4>EDA Guide</h4>
+            <p>Insights & charts</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="b4">
+          <div class="nav-item-icon">🤖</div>
+          <div class="nav-item-content">
+            <h4>Machine Learning</h4>
+            <p>Model building</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="b5">
+          <div class="nav-item-icon">🧪</div>
+          <div class="nav-item-content">
+            <h4>MLOps</h4>
+            <p>Deploy + monitor</p>
+          </div>
+        </div>
+
+        <div class="nav-item" data-feature="b6">
+          <div class="nav-item-icon">🗂️</div>
+          <div class="nav-item-content">
+            <h4>Portfolio Tips</h4>
+            <p>GitHub, CV</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Display -->
+      <div class="feature-display">
+
+        <!-- b1 -->
+        <div class="feature-panel active" id="b1">
+          <div class="feature-visual">🧾</div>
+          <h3>SQL Basics: Joins + GROUP BY</h3>
+          <p>Learn the most important SQL concepts for analytics: JOIN types, GROUP BY, and real KPI queries.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ JOIN Types</h5><p>INNER, LEFT, RIGHT, FULL</p></div>
+            <div class="benefit-item"><h5>✅ Aggregations</h5><p>COUNT, SUM, AVG, MIN, MAX</p></div>
+            <div class="benefit-item"><h5>✅ KPI Queries</h5><p>Revenue, retention, conversion</p></div>
+            <div class="benefit-item"><h5>✅ Practice</h5><p>Simple exercises for beginners</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Want full article? Message me →</a>
+        </div>
+
+        <!-- b2 -->
+        <div class="feature-panel" id="b2">
+          <div class="feature-visual">🐍</div>
+          <h3>Python for Data: Pandas Workflow</h3>
+          <p>A clean Python workflow for data projects: load → clean → transform → export → report.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Reading Data</h5><p>CSV/Excel + basic checks</p></div>
+            <div class="benefit-item"><h5>✅ Cleaning</h5><p>Missing values, types, duplicates</p></div>
+            <div class="benefit-item"><h5>✅ Transform</h5><p>groupby, merge, pivot</p></div>
+            <div class="benefit-item"><h5>✅ Export</h5><p>Save clean dataset + report</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Get code template →</a>
+        </div>
+
+        <!-- b3 -->
+        <div class="feature-panel" id="b3">
+          <div class="feature-visual">📊</div>
+          <h3>EDA Guide: Find Insights Fast</h3>
+          <p>EDA (Exploratory Data Analysis) helps you understand data before modeling. Here’s the checklist.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Data Understanding</h5><p>shape, columns, types</p></div>
+            <div class="benefit-item"><h5>✅ Distributions</h5><p>histograms & boxplots</p></div>
+            <div class="benefit-item"><h5>✅ Relationships</h5><p>correlation, scatter plots</p></div>
+            <div class="benefit-item"><h5>✅ Insights</h5><p>hypotheses + next steps</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Need EDA for your data? →</a>
+        </div>
+
+        <!-- b4 -->
+        <div class="feature-panel" id="b4">
+          <div class="feature-visual">🤖</div>
+          <h3>Machine Learning: From Baseline to Best Model</h3>
+          <p>How to build a strong ML model step-by-step: baseline → features → tuning → validation.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Baseline</h5><p>start simple & measure</p></div>
+            <div class="benefit-item"><h5>✅ Feature Engineering</h5><p>create better inputs</p></div>
+            <div class="benefit-item"><h5>✅ Cross Validation</h5><p>avoid overfitting</p></div>
+            <div class="benefit-item"><h5>✅ Evaluation</h5><p>metrics + error analysis</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Build an ML project with me →</a>
+        </div>
+
+        <!-- b5 -->
+        <div class="feature-panel" id="b5">
+          <div class="feature-visual">🧪</div>
+          <h3>MLOps: Deploy & Monitor Your Model</h3>
+          <p>Turn your notebook model into a production system with an API + monitoring basics.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Deployment</h5><p>FastAPI/Flask basics</p></div>
+            <div class="benefit-item"><h5>✅ Pipelines</h5><p>training + testing automation</p></div>
+            <div class="benefit-item"><h5>✅ Model Drift</h5><p>why accuracy drops</p></div>
+            <div class="benefit-item"><h5>✅ Monitoring</h5><p>alerts + performance checks</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Need deployment help? →</a>
+        </div>
+
+        <!-- b6 -->
+        <div class="feature-panel" id="b6">
+          <div class="feature-visual">🗂️</div>
+          <h3>Portfolio Tips: Projects That Get Interviews</h3>
+          <p>Make a strong data portfolio: 2–4 quality projects, clean GitHub, and clear story.</p>
+          <div class="feature-benefits">
+            <div class="benefit-item"><h5>✅ Project Selection</h5><p>choose business problems</p></div>
+            <div class="benefit-item"><h5>✅ GitHub</h5><p>README + structure</p></div>
+            <div class="benefit-item"><h5>✅ Story</h5><p>problem → solution → impact</p></div>
+            <div class="benefit-item"><h5>✅ Resume</h5><p>show outcomes & metrics</p></div>
+          </div>
+          <a href="contact.html" class="feature-cta">Want mentoring? →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>EcoLume</h3>
+                <p>Leading the bio-tech revolution with sustainable, nature-inspired solutions for a regenerative future.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📸</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Smart Ecosystems</a></li>
+                    <li><a href="#">Bio Energy</a></li>
+                    <li><a href="#">Circular Systems</a></li>
+                    <li><a href="#">Global Network</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Research Papers</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 EcoLume. Harmonizing technology with nature. All rights reserved.</p>
+            <span>•</span>
+            <p>Designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a></p>
+        </div>
+    </footer>
+
+  <script src="tooplate-eco-scripts.js"></script>
+
+  <!-- Tabs fix (works always) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".features-showcase").forEach(showcase => {
+        const navItems = showcase.querySelectorAll(".nav-item");
+        const panels = showcase.querySelectorAll(".feature-panel");
+
+        function activate(id) {
+          navItems.forEach(n => n.classList.remove("active"));
+          panels.forEach(p => p.classList.remove("active"));
+
+          const nav = showcase.querySelector(`.nav-item[data-feature="${id}"]`);
+          const panel = showcase.querySelector(`#${id}`);
+          if (nav) nav.classList.add("active");
+          if (panel) panel.classList.add("active");
+        }
+
+        navItems.forEach(item => {
+          item.addEventListener("click", () => {
+            activate(item.getAttribute("data-feature"));
+          });
+        });
+
+        const first = showcase.querySelector(".nav-item.active") || navItems[0];
+        if (first) activate(first.getAttribute("data-feature"));
+      });
+    });
+  </script>
+
+</body>
+</html>
